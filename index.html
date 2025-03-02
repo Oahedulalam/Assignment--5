@@ -38,7 +38,7 @@
                 <!-- navbar right sight image with date -->
                 <div class="flex gap-2 bg-blue-50 rounded-full p-2">
                     <img class="w-8 h-8" src="assets/checkbox.png" alt="">
-                    <p class="text-2xl font-bold"><data value="">23</data></p>
+                    <form id="navNumber" class="text-2xl font-bold"><data value="">23</data></form>
                 </div>
 
                 <!-- navbar Right sight button -->
@@ -59,7 +59,7 @@
                 <!-- first 3 card parents -->
                 <div class="flex justify-center items-center gap-6 pt-6">
                     <!-- first card section -->
-                    <div class=" bg-blue-50 rounded-xl shadow-sm flex h-32 w-60 p-7">
+                    <div class=" bg-blue-50 gap-6 font-bold rounded-xl shadow-sm flex h-32 w-60 p-7">
                         <!-- first card photo -->
                         <div>
                             <img class="p-2 bg-white rounded-full" src="assets/checkbox.png" alt="" />
@@ -67,7 +67,7 @@
                         <!-- first card right section -->
                         <div class="">
                             <h2 class="text-xs font-medium">Task Assigned </h2>
-                            <p class="text-2xl font-bold">6</p>
+                            <form action="" id="taskAssigned" class="text-2xl font-bold">6</form>
                         </div>
                     </div>
                     <!-- second card -->
@@ -83,15 +83,14 @@
                         </div>
                     </div>
                     <!-- third card -->
-                    <div class="  bg-blue-50 rounded-xl shadow-sm flex h-32 w-60 p-7">
+                    <div class=" bg-blue-50 rounded-xl gap-6 shadow-sm flex h-32 w-60 p-7">
                         <!-- third card photo -->
                         <div>
                             <img class="p-2 bg-white rounded-full" src="assets/calender.png" alt="" />
                         </div>
                         <!-- third card right section -->
                         <div class="">
-                            <h2 class="text-base font-medium">Wed ,</h2>
-                            <p id="currentDate" class="text-2xl font-bold">Jul 28 2025 </p>
+                            <p id="currentDate" class="text-xl font-semibold">Jul 28 2025 </p>
                         </div>
                     </div>
                 </div>
@@ -117,8 +116,9 @@
                                         class="mr-1">March</span>2025</h6>
                             </div>
                             <div>
-                                <button
-                                    class="btn bg-[#3752FD] text-white font-medium text-xs mt-4 justify-center">Completed</button>
+                                <!-- first card btn -->
+                                <button id="first-card-btn"
+                                    class="card-btn btn bg-[#3752FD] text-white font-medium text-xs mt-4 justify-center">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -140,8 +140,9 @@
                                         class="mr-1">March</span>2025</h6>
                             </div>
                             <div>
-                                <button
-                                    class="btn bg-[#3752FD] text-white font-medium text-xs mt-4 justify-center">Completed</button>
+                                <!-- 2nd card btn -->
+                                <button id="second-card-btn"
+                                    class="card-btn btn bg-[#3752FD] text-white font-medium text-xs mt-4 justify-center">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -163,8 +164,9 @@
                                         class="mr-1">March</span>2025</h6>
                             </div>
                             <div>
-                                <button
-                                    class="btn bg-[#3752FD] text-white font-medium text-xs mt-4 justify-center">Completed</button>
+                                <!-- 3rd card btn -->
+                                <button id="third-card-btn"
+                                    class="card-btn btn bg-[#3752FD] text-white font-medium text-xs mt-4 justify-center">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -186,8 +188,9 @@
                                         class="mr-1">March</span>2025</h6>
                             </div>
                             <div>
-                                <button
-                                    class="btn bg-[#3752FD] text-white font-medium text-xs mt-4 justify-center">Completed</button>
+                                <!-- 4th card btn -->
+                                <button id="fourth-card-btn"
+                                    class="card-btn btn bg-[#3752FD] text-white font-medium text-xs mt-4 justify-center">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -209,8 +212,9 @@
                                         class="mr-1">March</span>2025</h6>
                             </div>
                             <div>
-                                <button
-                                    class="btn bg-[#3752FD] text-white font-medium text-xs mt-4 justify-center">Completed</button>
+                                <!-- 5th card btn -->
+                                <button id="fifth-card-btn"
+                                    class="card-btn btn bg-[#3752FD] text-white font-medium text-xs mt-4 justify-center">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -232,8 +236,9 @@
                                         class="mr-1">March</span>2025</h6>
                             </div>
                             <div>
-                                <button
-                                    class="btn bg-[#3752FD] text-white font-medium text-xs mt-4 justify-center">Completed</button>
+                                <!-- 6th card btn -->
+                                <button id="sixth-card-btn"
+                                    class="card-btn btn bg-[#3752FD] text-white font-medium text-xs mt-4 justify-center">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -249,11 +254,7 @@
                 <button class="btn bg-[#3752FD] text-white font-medium text-xs mt-4 justify-center">Clear
                     History</button>
                 <div class="mx-4 mt-10">
-                    <p class="bg-blue-50 rounded-md p-3 text-xs font-light">You have Complete The Task Add Dark Mode at
-                        12:48:15 PM</p>
-                    <br>
-                    <p class="bg-blue-50 rounded-md p-3 text-xs font-light">You have Complete The Task Add Dark Mode at
-                        12:48:15 PM</p>
+                    <p id="update-status" class="bg-blue-50 rounded-md p-2 text-xs mt-1 font-semibold"></p>
                 </div>
             </section>
         </section>

@@ -7,4 +7,31 @@ let navBtn = document.getElementById('nav-btn').addEventListener('click', functi
    let randomColor = colors[Math.floor(Math.random() * colors.length)];
    document.body.style.background = randomColor;
 })
+  const currentDate = new Date().toLocaleDateString('en-US', { 
+            weekday: 'short',  
+            month: 'short',
+            day: '2-digit',     
+            year: 'numeric'     
+        });
+        document.getElementById('currentDate').innerText = currentDate;
+
+
+
+
+let taskAssignedNumber = 6;
+document.getElementById('first-card-btn').addEventListener('click', function () {
+   alert('Board Updated Successfully');
+   document.getElementById('first-card-btn').disabled = true;
+   if (taskAssignedNumber > 0) {
+      taskAssignedNumber -= 1;
+      document.getElementById('taskAssigned').innerText = taskAssignedNumber;
+      const updateStatusElement = document.getElementById('update-status');
+      updateStatusElement.innerText = 'you have complected the task fix mobile button issue at 1:26:50 AM';
+      const newNumber = document.getElementById('navNumber');
+      let newnumber = Number(newNumber.innerText);
+      newnumber += 1;
+      newNumber.innerText = newnumber;
+   }
+})
+
 
