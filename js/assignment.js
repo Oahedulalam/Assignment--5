@@ -15,8 +15,9 @@ let navBtn = document.getElementById('nav-btn').addEventListener('click', functi
         });
         document.getElementById('currentDate').innerText = currentDate;
 
-
-
+document.getElementById('clearHistory').addEventListener('click', function () {
+   document.getElementById('update-status').innerText = '';
+})
 
 let taskAssignedNumber = 6;
 document.getElementById('first-card-btn').addEventListener('click', function () {
